@@ -1,0 +1,29 @@
+#include <iostream>
+// Nama : Firgie Ahmad --- NIM : ETE10190123
+// Tugas Dirumah Pada Tanggal 6 Mei 2020 --- Membuat Penerapan Iteration dan Selection Bilangan Prima
+
+using namespace std;
+
+int main(){
+	int awal;
+	int akhir;
+	
+	cout << "masukan angka awal >> "; cin >> awal;
+	cout << "masukan angka akhir >> "; cin >> akhir;
+	cout << endl;
+	
+	for ( int f = awal ; f <= akhir ; f++ ){
+		int angka = 0;
+		for (int g = 1; g <= f; g++){
+			if (f % g == 0){
+				angka++;
+			}
+		}
+		
+		if (angka == 2){
+			cout << f << " Adalah bilangan Prima" << endl;
+		}else if (angka >= 2){
+			cout << f << " Adalah bukan bilangan Prima" << endl;
+		}
+	}
+}
